@@ -18,7 +18,6 @@ Embark on your TravelDiary journey by following these simple steps:
    ```
    git clone https://github.com/ritik2358/TravelDiary.git
    ```
-
 2. Navigate to the `Backend` directory:
    ```
    cd Backend
@@ -28,28 +27,45 @@ Embark on your TravelDiary journey by following these simple steps:
    ```
    npm install
    ```
-
-4. Start the Backend Server by running the following command:
+4. Set up the environment variables in a nodemon.json file like this :
+   ```
+   "env": {
+        "DB_USER": "<your db user name",
+        "DB_PASSWORD": "<your db password>",
+        "DB_NAME": "<your db name>",
+        "GOOGLE_API_KEY": "<your google api key",
+        "JWT_KEY": "<your jwt key>"
+    }
+   ``` 
+   Add this file in the root of Backend directory 
+5. Start the Backend Server by running the following command:
    ```
    npm start
    ```
 
-5. Navigate to the `Frontend` directory:
+6. Navigate to the `Frontend` directory:
    ```
    cd Frontend
    ```
 
-6. Install the required dependencies by running the following command:
+7. Install the required dependencies by running the following command:
    ```
    npm install
    ```
-
-7. Finally, start the Frontend of the Application:
+8. Set up the environment variables in a .env file like this:
+   ```
+   REACT_APP_GOOGLE_API_KEY=<your google api key>
+   REACT_APP_BACKEND_URL=<your backend url>
+   REACT_APP_ASSET_URL=<your asset url>
+   ```
+    Add this file in the root of Frontend directory 
+   
+9. Finally, start the Frontend of the Application:
    ```
    npm start
    ```
 
-8. Open your browser and visit `http://localhost:3000` to access the captivating world of TravelDiary.
+10. Open your browser and visit `http://localhost:3000` to access the captivating world of TravelDiary.
 
 ## Contributing
 
